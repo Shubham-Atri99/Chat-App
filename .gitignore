@@ -1,0 +1,32 @@
+# === General OS/Editor Files ===
+*.log
+logs/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# === Node.js Backend (in /server) ===
+server/node_modules/
+server/.env
+server/dist/
+server/build/
+server/npm-debug.log*
+server/yarn-debug.log*
+server/yarn-error.log*
+server/package-lock.json
+server/yarn.lock
+
+# === React Frontend (in /client/chat-app) ===
+client/chat-app/node_modules/
+client/chat-app/.env
+client/chat-app/dist/
+client/chat-app/build/
+client/chat-app/.next/
+client/chat-app/.turbo/
+client/chat-app/package-lock.json
+client/chat-app/yarn.lock
+
+# === Test/Coverage ===
+coverage/
+.nyc_output/
