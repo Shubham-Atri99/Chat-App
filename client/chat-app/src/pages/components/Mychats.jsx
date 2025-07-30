@@ -73,11 +73,12 @@ const MyChats = () => {
                 {getChatName(chat)}
               </p>
               {chat.latestMessage && (
-                <p className="text-gray-600 dark:text-gray-400 text-sm truncate">
-                  <strong>{chat.latestMessage.sender.name}:</strong>{' '}
-                  {chat.latestMessage.content}
-                </p>
-              )}
+  <p className="text-gray-600 dark:text-gray-400 text-sm truncate">
+    <strong>{chat.latestMessage?.sender?.name || 'Unknown'}:</strong>{' '}
+    {chat.latestMessage.content}
+  </p>
+)}
+
             </div>
           ))
         )}

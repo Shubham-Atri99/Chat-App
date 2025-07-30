@@ -17,3 +17,7 @@ const Messagemodel= new Schema({
 },{
     timestamps:true,
 })
+
+const Message=mongoose.model("Message",Messagemodel);
+
+export default Message;
